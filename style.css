@@ -1,0 +1,65 @@
+body {
+    width: 700px;
+    height: auto;
+    margin: 100px auto;
+    border: 2px solid darkgray;
+  }
+  .menu {
+    word-spacing: 50px;
+    padding: 10px 50px;
+    font-size: 20px
+  }
+  .page-name {
+    position: relative;
+  }
+  .name-h1 {
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    top: 40px;
+    left: 40px;
+  }
+  .name-lorem {
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    bottom: 80px;
+    left: 180px;
+  }
+  section {
+    display: grid;
+    grid-template: repeat(3, 1fr) repeat(3, 1fr);
+    grid-template-areas:
+      "section1 section1 aside"
+      "section1 section1 aside"
+      "photo section2 section2";
+    gap: 20px;
+  }
+  .section1 {
+    grid-area: section1;
+    padding: 20px 20px
+  }
+  .section2 {
+    grid-area: section2;
+    padding: 20px 20px;
+  }
+  .aside {
+    grid-area: aside;
+    padding: 20px 20px;
+  }
+  .photo {
+    grid-area: photo;
+    padding: 20px 20px
+  }
+  footer {
+    height: 100px;
+    background-color: darkgray;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .copyright {
+    width: auto;
+    margin: 0px auto;
+  }
+  
